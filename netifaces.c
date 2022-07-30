@@ -1,4 +1,5 @@
 #include <Python.h>
+#define HAVE_GETIFADDRS 1 // force HAVE_GETIFADDRS no matter what platform
 
 /* Before Python 2.6, PyUnicode_FromString doesn't exist */
 #if PY_MAJOR_VERSION < 2 || (PY_MAJOR_VERSION == 2 && PY_MINOR_VERSION < 6)
